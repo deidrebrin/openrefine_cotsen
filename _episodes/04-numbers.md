@@ -1,50 +1,44 @@
 ---
-title: "Examining Numbers in OpenRefine"
+title: "Examining Outliers in OpenRefine"
 teaching: 10
 exercises: 10
 questions:
-- "How can we convert a column from one data type to another?"
-- "How can we visualize relationships among columns?"
+- "How can we see numeric outliers?"
 objectives:
-- "Transform a text column into a number column."
-- "Identify and modify non-numeric values in a column using facets."
+- "Transform a values for a subset of the data."
 keypoints:
 - "OpenRefine also provides ways to get overviews of numerical data."
 ---
 
 # Lesson
 
-## Numbers
+## Dates
 
-When a table is imported into OpenRefine, all columns are treated as having text values. We saw earlier how we can sort column values as numbers, but this does not change the cells in a column from text to numbers. Rather, this interprets the values as numbers for the purposes of sorting but keeps the underlying data type as is. We can, however, transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here we will experiment changing columns to numbers and see what additional capabilities that grants us.
+Dates often cause issues in datasets when entered by hand. Let's examine the `date` column next! Quickly glancing over the column shows that the dates have been entered in various formats, even though the registry manual clearly states dates should be entered day/month/year. But we should be able to correct that easily!
 
-Be sure to remove any `Text filter` facets you have enabled from the left panel so that we can examine our whole dataset. You can remove an existing facet by clicking the `x` in the upper left of that facet window.
+1. Click the down arrow at the top of the `date` column. Choose `Edit cells` and then `Common transformations` and then `To date`.
+2. Uh oh...it looks like OpenRefine wasn't able to distinguish between the month/day and the day/month entries! Undo the transformation.
+3. Let's try a different approach then. Click the down arrow at the top of the `date` column and this time select `Facet` then `Text facet` since these values appear to have been entered as text fields. 
+4. We can now edit all of the month/day values to match the format that was outlined in the registry manual! 
 
-To transform cells in the `years_farm` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `years_farm` values change from left-justified to right-justified, and black to green in color.
+## Finding outliers - numbers
 
-> ## Exercise
->
-> Transform three more columns, `no_members`, `yrs_liv`, and `buildings_in_compound`, from text to numbers. Can all columns be transformed to numbers? - Try it with `village` for example.
->
-> > ## Solution
-> >
-> > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
-> > a column that doesn't meet this criteria, and then click the `Undo / Redo` tab, you will see a step that starts with
-> > `Text transform on 0 cells`. This means that the data in that column was not transformed.
-> {: .solution}
-{: .challenge}
+As we saw with the text faceting, OpenRefine allowed us to easily see typos and entry errors in our text fields. Using the  facet tool can also bring to light numeric outliers. 
 
-### Numeric facet
-Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them.
-We can do that with a `Numeric facet`.
+It appears as though Jane Doe didn't read the registry manual very carefully and we're concerned the weights might have also been misentered. So let's look at our `weight` column next but using a numeric facet this time. 
 
-> ## Exercise
-> 1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text).
-> 2. Use the pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
-> 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
-> 4. Experiment with checking or unchecking these boxes to select subsets of your data.
-{: .challenge}
+1. Click on the down arrow at the top of the `weight` column.
+2. Select `Facet` then `Numeric facet`.
+3. Adjust the slider bars to see the two outliers.
 
-When done examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its panel. Note that this does not undo the edits you made to the cells in this column. Use the `Undo / Redo` function to reverse these changes.
+Now that we can see the data associated with the outliers, it appears all of the weight values by Jane Doe were entered in grams instead of kilograms. Let's correct them all!
+
+1. We know we need to correct all of Jane's entries so remove the numeric facet and create a text facet on the `recorder` column instead.
+2. Restrict the records to just those entered by `Jane Doe`.
+3. Once again, click on the down arrow at the top of the `weight` column and this time select `Edit cells` then `Transform`.
+4. We know that there are 1000 grams in a kilogram so we can edit the entries to the correct unit by dividing the current value by 1000. Let's use Python this time!
+5. Select `Python / Jython` then enter `return value/1000`. Check the results in the preview pane. 
+6. Click `Ok`.
+
 
 {% include links.md %}
