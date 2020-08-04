@@ -1,7 +1,7 @@
 ---
 title: "Working with OpenRefine"
-teaching: 15
-exercises: 20
+teaching: 20
+exercises: 10
 questions:
 - "How can we bring our data into OpenRefine?"
 - "How can we sort and summarize our data?"
@@ -23,8 +23,11 @@ keypoints:
 
 # Lesson
 
-## Workshop dataset
-Quick note on the data we'll be using in this workshop. It has been created by...
+> ## Workshop dataset
+> Quick note on the data we'll be using in this workshop. It is from a fictional excavation that will take place in the Digital Archaeology Lab later this year.
+> The data have been intentionally 'messed up' for the lesson. 
+> 
+> **Download** the data file to your computer by [clicking this link](https://ucla.box.com/s/kc848ky38ajmbq90ve1l1tik6i5v5bh4). 
 
 ## Creating a new OpenRefine project
 
@@ -59,7 +62,7 @@ OpenRefine has two modes of viewing data: ‘Rows’ and ‘Records’. At the m
 
 Facets are one of the most useful features in OpenRefine and can help both get an overview of the data in a project as well as helping you bring more consistency to the data. OpenRefine supports faceted browsing as a mechanism for
 
-* seeing a big picture of your data, and
+* seeing a big picture of your data
 * filtering down to just the subset of rows that you want to change in bulk.
 
 A 'Facet' groups all the like values that appear in a column, and then allow you to filter the data by these values and edit values across many records at the same time.
@@ -93,9 +96,9 @@ along with a number representing how many times that value occurs in the column.
 > * Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row
 > * Text length facet - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
 > * Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
- 
- **Numeric and Scatterplot facets** display graphs instead of lists of values. The numeric facet graph includes 'drag and drop' controls you can use to set a start and end range to filter the data displayed.
-{: .callout}
+>  
+>  **Numeric and Scatterplot facets** display graphs instead of lists of values. The numeric facet graph includes 'drag and drop' controls you can use to set a start and end range to filter the data displayed.
+> {: .callout}
 
 
 ## Using clustering to detect possible typing errors
@@ -142,10 +145,10 @@ Wait...this isn't what we wanted!
 
 It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
 
-> 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
-> 2. Click on the step that you want to go back to, in this case go back one step to before you had `Split multi-valued cells in column GPS`.
-> 3. Visually confirm that the rows are back to how we want them.
-> 3. Notice that you can still click on the later steps to `Redo` the actions. 
+1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
+2. Click on the step that you want to go back to, in this case go back one step to before you had `Split multi-valued cells in column GPS`.
+3. Visually confirm that the rows are back to how we want them.
+4. Notice that you can still click on the later steps to `Redo` the actions. 
 
 ## Spliting a column
 

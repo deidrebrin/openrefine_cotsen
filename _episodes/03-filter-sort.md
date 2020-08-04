@@ -1,6 +1,6 @@
 ---
 title: "Filtering and Sorting with OpenRefine"
-teaching: 10
+teaching: 15
 exercises: 10
 questions:
 - "How can we select only a subset of our data to work with?"

@@ -1,7 +1,7 @@
 ---
 title: "Examining Outliers in OpenRefine"
-teaching: 10
-exercises: 10
+teaching: 5
+exercises: 5
 questions:
 - "How can we see numeric outliers?"
 objectives:
