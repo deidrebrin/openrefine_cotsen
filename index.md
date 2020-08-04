@@ -20,10 +20,8 @@ edits by hand.
 
 > ## Getting Started
 >
-> Data Carpentry's teaching is hands-on, so participants are encouraged to use
-> their own computers to ensure the proper setup of tools for an efficient 
-> workflow.
->
+This workshop has been adapted from the [Data Carpentries OpenRefine for Social Science Data lessons](https://datacarpentry.org/openrefine-socialsci/). 
+
 > **These lessons assume no prior knowledge of the skills or tools.**
 >
 > To get started, follow the directions in the "[Setup](setup.html)" tab to 
@@ -31,15 +29,8 @@ edits by hand.
 >
 > #### Prerequisites
 >
-> This lesson requires a working copy of OpenRefine (also called 
-> GoogleRefine).
+> To follow along with the workshop, you will need a working copy of OpenRefine.
 > 
 > To most effectively use these materials, please make sure to install 
 > everything *before* working through this lesson.
 {: .prereq}
-
-> ## For Instructors
-> If you are teaching this lesson in a workshop, please see the 
-> [Instructor notes](guide/).
-{: .prereq}
-

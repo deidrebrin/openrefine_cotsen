@@ -138,7 +138,7 @@ Now that we have cleaned out extraneous characters from our `GPS` column, we can
 Wait...this isn't what we wanted!
 
 
-## Using undo and redo.
+## Using undo and redo
 
 It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
 

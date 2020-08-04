@@ -5,20 +5,10 @@ title: Setup
 
 > ## Data
 >
-> The data for this lesson is a part of the Data Carpentry Social Sciences
-> workshop. It is a teaching version of the Studying African Farmer-Led
-> Irrigation (SAFI) database. The SAFI dataset represents interviews of farmers
-> in two countries in eastern sub-Saharan Africa (Mozambique and Tanzania).
-> These interviews were conducted between November 2016 and June 2017 and probed
-> household features (e.g. construction materials used, number of household
-> members), agricultural practices (e.g. water usage), and assets (e.g. number
-> and types of livestock).
+> The data for this lesson is from a fictional excavation that will take place in the Digital Archaeology Lab later this year.
+> The data have been intentionally 'messed up' for the lesson. 
 > 
-> The data used in this lesson
-> is a subset of the teaching version that has been intentionally 'messed up'
-> for this lesson.
-> 
-> **Download** the data file to your computer by [clicking this link](https://ndownloader.figshare.com/files/11502815). (direct link: <https://ndownloader.figshare.com/files/11502815>)
+> **Download** the data file to your computer by [clicking this link](https://ucla.box.com/s/kc848ky38ajmbq90ve1l1tik6i5v5bh4). 
 {: .prereq}
 
 
