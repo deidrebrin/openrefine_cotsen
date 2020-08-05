@@ -23,11 +23,11 @@ keypoints:
 
 # Lesson
 
-> ## Workshop dataset
-> Quick note on the data we'll be using in this workshop. It is from a fictional excavation that will take place in the Digital Archaeology Lab later this year.
-> The data have been intentionally 'messed up' for the lesson. 
-> 
-> **Download** the data file to your computer by [clicking this link](https://ucla.box.com/s/kc848ky38ajmbq90ve1l1tik6i5v5bh4). 
+## Workshop dataset
+Quick note on the data we'll be using in this workshop. It is from a fictional excavation that will take place in the Digital Archaeology Lab later this year.
+The data have been intentionally 'messed up' for the lesson. 
+
+**Download** the data file to your computer by [clicking this link](https://ucla.box.com/s/kc848ky38ajmbq90ve1l1tik6i5v5bh4). 
 
 ## Creating a new OpenRefine project
 
@@ -78,27 +78,6 @@ along with a number representing how many times that value occurs in the column.
 4. Try sorting this facet by name and by count. Do you notice any problems with the data? What are they?
 5. Hover the mouse over one of the names in the `Facet` list. You should see that you have an `edit` function available.
 6. You could use this to fix an error immediately, and OpenRefine will ask whether you want to make the same correction to every value it finds like that one. But OpenRefine offers even better ways to find and fix these errors, which we'll use instead. We'll learn about these when we talk about clustering.
-
-
-> ## More on Facets
-> [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
->
-> As well as 'Text facets' Refine also supports a range of other types of facet. These include:
->
-> * Numeric facets
-> * Timeline facets (for dates)
-> * Custom facets
-> * Scatterplot facets
->
-> **Custom facets** are a range of different types of facets. Some of the default custom facets are:
->
-> * Word facet - this breaks down text into words and counts the number of records each word appears in
-> * Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row
-> * Text length facet - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
-> * Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
->  
->  **Numeric and Scatterplot facets** display graphs instead of lists of values. The numeric facet graph includes 'drag and drop' controls you can use to set a start and end range to filter the data displayed.
-> {: .callout}
 
 
 ## Using clustering to detect possible typing errors
@@ -159,5 +138,24 @@ Now that we have the `GPS` column back, let's split it correctly!
 3. Click `Ok`.
 
 That's more like it! Now we can rename the columns to `Latitude` and `Longitude` and be ready to import our finds data into a map!
+
+> ## Bonus: More on Facets
+> [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
+>
+> As well as 'Text facets' Refine also supports a range of other types of facet. These include:
+>
+> * Numeric facets
+> * Timeline facets (for dates)
+> * Custom facets
+> * Scatterplot facets
+>
+> **Custom facets** are a range of different types of facets. Some of the default custom facets are:
+>
+> * Word facet - this breaks down text into words and counts the number of records each word appears in
+> * Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row
+> * Text length facet - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
+> * Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
+>  
+>  **Numeric and Scatterplot facets** display graphs instead of lists of values. The numeric facet graph includes 'drag and drop' controls you can use to set a start and end range to filter the data displayed.
 
 {% include links.md %}

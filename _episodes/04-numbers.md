@@ -37,7 +37,7 @@ Now that we can see the data associated with the outliers, it appears all of the
 2. Restrict the records to just those entered by `Jane Doe`.
 3. Once again, click on the down arrow at the top of the `weight` column and this time select `Edit cells` then `Transform`.
 4. We know that there are 1000 grams in a kilogram so we can edit the entries to the correct unit by dividing the current value by 1000. Let's use Python this time!
-5. Select `Python / Jython` then enter `return value/1000`. Check the results in the preview pane. 
+5. Select `Python / Jython` then enter `return value/1000.00` so that we have two places after the decimal point returned. Check the results in the preview pane. 
 6. Click `Ok`.
 
 

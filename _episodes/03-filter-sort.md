@@ -19,8 +19,8 @@ keypoints:
 
 In addition to faceting, you can subset your data and work on just that subset using filters. 
 
-1. Click the down arrow next to `material` > `Text filter`. A `material` facet will appear on the left margin.
-2. Type in `metal` and press return. 
+1. Click the down arrow next to `trench` > `Text filter`. A `trench` facet will appear on the left margin.
+2. Type in `1` and press return. 
 
 
 ### Include/exclude and invert
