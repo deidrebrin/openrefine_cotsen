@@ -1,5 +1,5 @@
 ---
-title: "Using scripts "
+title: "Using Scripts "
 teaching: 5
 exercises: 5
 questions:

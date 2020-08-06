@@ -4,15 +4,16 @@ teaching: 20
 exercises: 10
 questions:
 - "How can we bring our data into OpenRefine?"
-- "How can we sort and summarize our data?"
-- "How can we find and correct errors in our raw data?"
+- "How can we summarize our data with facets?"
+- "How can we find and correct errors in our raw data with clustering?"
+- "How can we separate values into multiple columns?"
 objectives:
 - "Create a new OpenRefine project from a CSV file."
 - "Understand potential problems with file headers."
 - "Use facets to summarize data from a column."
 - "Use clustering to detect possible typing errors."
 - "Understand that there are different clustering algorithms which might give different results."
-- "Employ drop-downs to remove white spaces from cells."
+- "Employ drop-downs to make batch edits."
 - "Manipulate data using previous steps with undo/redo."
 keypoints:
 - "OpenRefine can import a variety of file types."
